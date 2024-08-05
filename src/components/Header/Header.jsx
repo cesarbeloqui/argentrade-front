@@ -1,75 +1,108 @@
-import { useState } from "react";
+import { Fragment } from "react";
+import { Menu, Transition, Disclosure } from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import Logo from "../../assets/Logo.jpg";
 
-function Header() {
-  const [open, setOpen] = useState(false);
-
-  return (
-    <header>
-      <nav className="flex h-auto w-auto bg-white shadow-lg rounded-lg justify-between md:h-16">
-        <div className="flex w-full justify-between">
-          <div
-            className={`flex px-6 w-1/2 items-center font-semibold md:w-1/5 md:px-1 ${open ? "hidden" : "flex"}`}
-          >
-            <a href="">Mattismyname</a>
-          </div>
-
-          {/* Menú móvil (visible solo en pantallas pequeñas) */}
-          {open && (
-            <div className="flex flex-col w-full h-auto md:hidden">
-              <div className="flex flex-col items-center justify-center gap-2">
-                <a href="">Home</a>
-                <a href="">About Us</a>
-                <a href="">Products</a>
-                <a href="">Contact</a>
-                <button>Login</button>
-                <button>Sign Up</button>
-              </div>
-            </div>
-          )}
-
-          {/* Menú de escritorio (visible solo en pantallas medianas y grandes) */}
-          <div className="hidden w-3/5 items-center justify-evenly font-semibold md:flex">
-            <a href="">Home</a>
-            <a href="">About Us</a>
-            <a href="">Products</a>
-            <a href="">Contact</a>
-          </div>
-          <div className="hidden w-1/5 items-center justify-evenly font-semibold md:flex">
-            <button>Login</button>
-            <button>Sign Up</button>
-          </div>
-
-          {/* Botón de hamburguesa */}
-          <button
-            className="text-gray-500 w-10 h-10 relative focus:outline-none bg-white md:hidden"
-            onClick={() => setOpen(!open)}
-          >
-            <span className="sr-only">Open main menu</span>
-            <div className="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-              <span
-                aria-hidden="true"
-                className={`block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out ${
-                  open ? "rotate-45 -translate-y-1.5" : ""
-                }`}
-              ></span>
-              <span
-                aria-hidden="true"
-                className={`block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out ${
-                  open ? "opacity-0" : ""
-                }`}
-              ></span>
-              <span
-                aria-hidden="true"
-                className={`block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out ${
-                  open ? "-rotate-45 translate-y-1.5" : ""
-                }`}
-              ></span>
-            </div>
-          </button>
-        </div>
-      </nav>
-    </header>
-  );
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
 }
 
-export default Header;
+export default function Example() {
+  const navigation = [
+    { name: "¿Qué hacemos?", href: "#", current: true },
+    { name: "¿Para quiénes?", href: "#", current: false },
+    { name: "Servicios y Productos", href: "#", current: false },
+    { name: "Contacto", href: "#", current: false },
+  ];
+
+  return (
+    <Disclosure as="nav" className="bg-white">
+      {({ open }) => (
+        <>
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="flex h-16 justify-between">
+              <div className="flex w-full justify-between">
+                <div className="flex flex-shrink-0 items-center">
+                  <img
+                    className="block h-8 w-auto lg:hidden"
+                    src={Logo}
+                    alt="Argentrade"
+                  />
+                  <img
+                    className="hidden h-8 w-auto lg:block"
+                    src={Logo}
+                    alt="Argentrade"
+                  />
+                </div>
+                <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+                  {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
+                  {navigation.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className={classNames(
+                        item.current
+                          ? "border-indigo-500 text-gray-900"
+                          : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700",
+                        "inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium"
+                      )}
+                      aria-current={item.current ? "page" : undefined}
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+
+              <div className="-mr-2 flex items-center sm:hidden">
+                {/* Mobile menu button */}
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <span className="sr-only">Open main menu</span>
+                  {open ? (
+                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                  ) : (
+                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                  )}
+                </Disclosure.Button>
+              </div>
+            </div>
+          </div>
+
+          <Disclosure.Panel className="sm:hidden">
+            <div className="space-y-1 pt-2 pb-3">
+              {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
+              <Disclosure.Button
+                as="a"
+                href="#"
+                className="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700"
+              >
+                Dashboard
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="#"
+                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+              >
+                Team
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="#"
+                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+              >
+                Projects
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="#"
+                className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+              >
+                Calendar
+              </Disclosure.Button>
+            </div>
+          </Disclosure.Panel>
+        </>
+      )}
+    </Disclosure>
+  );
+}
