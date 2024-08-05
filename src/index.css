@@ -1,4 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "PontiacBlack";
+  src: url("/src/assets/fonts/pontiac_black.otf") format("opentype");
+}
+@font-face {
+  font-family: "PontiacBlackItalic";
+  src: url("/src/assets/fonts/pontiac_black_italic.otf") format("opentype");
+}
+@font-face {
+  font-family: "PontiacBold";
+  src: url("/src/assets/fonts/pontiac_bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "PontiacBoldItalic";
+  src: url("/src/assets/fonts/pontiac_bold_italic.otf") format("opentype");
+}
+@font-face {
+  font-family: "PontiacLight";
+  src: url("/src/assets/fonts/pontiac_light.otf") format("opentype");
+}
+@font-face {
+  font-family: "PontiacLightItalic";
+  src: url("/src/assets/fonts/pontiac_light_italic.otf") format("opentype");
+}
+@font-face {
+  font-family: "PontiacRegular";
+  src: url("/src/assets/fonts/pontiac_regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "PontiacRegularItalic";
+  src: url("/src/assets/fonts/pontiac_regular_italic.otf") format("opentype");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
