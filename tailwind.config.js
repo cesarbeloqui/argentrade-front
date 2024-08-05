@@ -27,7 +27,11 @@ export default {
       sans: ["Raleway", "sans-serif"],
       serif: ["Roboto", "serif"],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-1": "url('/src/assets/head1.png')",
+      },
+    },
   },
   plugins: [forms, animations],
 };
