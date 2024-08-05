@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import forms from "@tailwindcss/forms";
+import animations from "@midudev/tailwind-animations";
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
@@ -28,5 +29,5 @@ export default {
     },
     extend: {},
   },
-  plugins: [forms],
+  plugins: [forms, animations],
 };
