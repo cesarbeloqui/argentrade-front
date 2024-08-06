@@ -1,11 +1,14 @@
+import { lazy } from "react";
+
 import "./App.css";
-import Header from "./components/Header/Header";
+
+const Header = lazy(() => import("./components/Header/Header"));
 
 function App() {
   return (
     <>
-      <Header></Header>
-      <div style={{height: "1000px"}}>
+      <Header />
+      <div style={{ height: "1000px" }}>
         <h1>Hola mundo</h1>
       </div>
     </>

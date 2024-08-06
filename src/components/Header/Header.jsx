@@ -1,8 +1,7 @@
 import Navbar from "./Navbar/Navbar";
 import Logo from "../../assets/Logo.png";
 import Slider from "./Slider/Slider";
-
-const Header = () => {
+const Header = ({ resources }) => {
   const navigationItems = [
     { name: "¿Qué hacemos?", href: "#", current: true },
     { name: "¿Para quiénes?", href: "#", current: false },

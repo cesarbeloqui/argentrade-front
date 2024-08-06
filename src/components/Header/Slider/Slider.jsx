@@ -1,6 +1,6 @@
 import isologo from "../../../assets/isologo.png";
 import carrusel from "../../../assets/carrousel.png";
-import Slider1 from "./Slide1";
+import Slider1 from "./Slide1"
 
 const Slider = () => {
   const subTittle =
