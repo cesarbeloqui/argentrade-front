@@ -1,6 +1,6 @@
 import Navbar from "./Navbar/Navbar";
 import Logo from "../../assets/Logo.png";
-import Head from "./Head/Head";
+import Slider from "./Slider/Slider";
 
 const Header = () => {
   const navigationItems = [
@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <>
       <Navbar navigationItems={navigationItems} Logo={Logo} />
-      <Head />
+      <Slider />
     </>
   );
 };
