@@ -1,17 +1,17 @@
 import { lazy } from "react";
 
 import "./App.css";
+import { BrowserRouter as Router} from "react-router-dom";
 
 const Header = lazy(() => import("./components/Header/Header"));
+const QueHacemos = lazy(() => import("./components/QueHacemos/QueHacemos"));
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <div style={{ height: "1000px" }}>
-        <h1>Hola mundo</h1>
-      </div>
-    </>
+      <QueHacemos />
+    </Router>
   );
 }
 

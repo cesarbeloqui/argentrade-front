@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import SwitchLanguage from "./SwitchLenguage/SwitchLanguage";
 
 const classNames = (...classes) => classes.filter(Boolean).join(" ");
 
@@ -57,6 +58,7 @@ const Navbar = ({ navigationItems, Logo }) => {
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               {navigationItems.map(renderNavItem)}
+              <SwitchLanguage />
             </div>
           </div>
           <div className="-mr-2 flex items-center sm:hidden">

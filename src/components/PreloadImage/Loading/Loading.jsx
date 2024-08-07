@@ -7,7 +7,7 @@ const Loading = () => {
         src={load}
         alt=""
         className="w-16 animate-rotate-360 animate-infinite"
-        style={{ "animation-iteration-count": "infinite" }}
+        style={{ animationIterationCount: "infinite" }}
       />
     </div>
   );

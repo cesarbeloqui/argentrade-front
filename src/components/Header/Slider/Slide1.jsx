@@ -1,7 +1,7 @@
 const Slide1 = ({ carrusel, subTittle, isologo }) => {
   return (
-    <div className="relative h-[65vh] sm:h-[39.88vw] sm:w-full bg-hero-1 bg-no-repeat bg-center bg-fixed bg-cover justify-left align-middle flex">
-      <div className="animate-zoom-in flex flex-col items-center justify-center md:items-center md:justify-start sm:pt-[12.1vw] w-full sm:w-[63%] h-full z-10">
+    <div className="relative h-[65vh] sm:h-[39.88vw] sm:w-full bg-hero-1 bg-no-repeat bg-center bg-fixed bg-cover flex justify-left items-middle">
+      <div className="animate-zoom-in flex flex-col items-center justify-center md:items-center md:justify-start sm:pt-[9vw] w-full sm:w-[63%] h-full z-10">
         <img
           src={carrusel}
           alt=""
@@ -11,7 +11,6 @@ const Slide1 = ({ carrusel, subTittle, isologo }) => {
           {subTittle}
         </h3>
       </div>
-      {/* Isologo */}
       <img
         src={isologo}
         alt=""
@@ -20,4 +19,5 @@ const Slide1 = ({ carrusel, subTittle, isologo }) => {
     </div>
   );
 };
+
 export default Slide1;
