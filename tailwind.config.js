@@ -43,5 +43,5 @@ export default {
       },
     },
   },
-  plugins: [forms, animations],
+  plugins: [forms, animations, ],
 };

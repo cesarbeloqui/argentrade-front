@@ -7,7 +7,7 @@ const Slide1 = ({ carrusel, subTittle, isologo }) => {
           alt=""
           className="animate-zoom-in relative w-[70vw] sm:w-[37.8vw] h-auto"
         />
-        <h3 className="text-white text-xs sm:text-[1.5153vw] font-medium mt-4 w-[49%]">
+        <h3 className="text-white text-xs sm:text-[1.5153vw] font-medium mt-4 w-[49%] sm:leading-7">
           {subTittle}
         </h3>
       </div>

@@ -4,15 +4,14 @@ import RightCard from "./RightCard";
 
 const QueHacemos = () => {
   const { queHacemosSection } = useLocalizedContent();
-  console.log(queHacemosSection);
   return (
-    <section id="que-hacemos" className="h-[90vh]">
-      <div className="grid grid-cols-8 gap-28 mx-20 ">
+    <section id="que-hacemos" className="sm:h-[90vh] mx-5 sm:mx-20 my-5 sm:my-10">
+      <div className="sm:grid sm:grid-cols-2 sm:grid-rows-[0.5fr_1.1fr_1.1fr_1.1fr] sm:gap-x-[10vw]">
         <LeftCard
           titulo={queHacemosSection.titulo}
           contenido={queHacemosSection.contenido}
         />
-        <RightCard />
+        <RightCard items={queHacemosSection.items} />
       </div>
     </section>
   );
