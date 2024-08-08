@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { PropTypes } from "prop-types";
+import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import SwitchLanguage from "./SwitchLenguage/SwitchLanguage";
 
@@ -87,6 +88,11 @@ const Navbar = ({ navigationItems, Logo }) => {
       </div>
     </nav>
   );
+};
+
+Navbar.propTypes = {
+  navigationItems: PropTypes.array.isRequired,
+  Logo: PropTypes.string.isRequired,
 };
 
 export default Navbar;

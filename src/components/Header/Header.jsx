@@ -7,15 +7,21 @@ const Header = ({ resources }) => {
   const navigationItems = [
     { name: localizedContent.inicio, href: "#inicio", current: true },
     { name: localizedContent.queHacemos, href: "#que-hacemos", current: false },
-    { name: localizedContent.paraQuienes, href: "#", current: false },
+    {
+      name: localizedContent.paraQuienes,
+      href: "#para-quienes",
+      current: false,
+    },
     { name: localizedContent.serviciosYProductos, href: "#", current: false },
     { name: localizedContent.contacto, href: "#", current: false },
   ];
   return (
-    <section id="inicio">
+    <>
       <Navbar navigationItems={navigationItems} Logo={Logo} />
-      <Slider />
-    </section>
+      <section id="inicio">
+        <Slider />
+      </section>
+    </>
   );
 };
 

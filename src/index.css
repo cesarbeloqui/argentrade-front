@@ -46,9 +46,19 @@ body {
   @apply bg-primary;
 }
 
+@keyframes showLeft {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 @keyframes show {
   from {
-    scale: 0.5;
+    scale: 0;
     opacity: 0;
   }
   to {
@@ -56,22 +66,36 @@ body {
     opacity: 1;
   }
 }
+.scroll-animated-show-left {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: showLeft;
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
 .scroll-animated-show {
-  animation: show linear;
-  animation-timeline: view();
-  animation-range: entry 0;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 10% cover 30%;
+  animation-fill-mode: both;
 }
 @keyframes trans-x {
   from {
     transform: translateX(50px);
+    opacity: 0; /* Opcional para desvanecimiento */
   }
   to {
     transform: translateX(0px);
+    opacity: 1; /* Opcional para desvanecimiento */
   }
 }
 
-.scroll-trans-x {
-  animation: trans-x linear;
-  animation-timeline: view();
-  animation-range: entry 0;
+.animated-enter {
+  animation: trans-x 0.5s ease-out;
+}
+.animate-out {
+  animation: trans-x-out 1s ease-out;
 }

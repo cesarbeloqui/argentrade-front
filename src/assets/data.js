@@ -14,35 +14,42 @@ const locales = {
       Nos convertimos en el departamento de Comercio Exterior de tu empresa para que mejoren su rentabilidad, competitividad y costos y sigan enfocados en vender más y desarrollar nuevos negocios.`,
       items: [
         {
+          id: 1,
+
           contenido:
             "Facilitamos y gestionamos la inscripción de importación de tu empresa.",
           iconUrl:
             "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
         {
+          id: 2,
           contenido:
             "Costeo detallado e integral de cada operación (costeamos de manera detallada e integral cada operación).",
           iconUrl:
             "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
         {
+          id: 3,
           contenido:
             "Facilitamos la búsqueda , negociación y selección del proveedor más apto.",
           iconUrl: "/src/assets/box.svg",
         },
         {
+          id: 4,
           contenido:
             "Profundo conocimiento de la oferta de productos y proveedores asiáticos.",
           iconUrl:
             "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
         {
+          id: 5,
           contenido:
             "Envio de muestras y controles de calidad previos al embarque.",
           iconUrl:
             "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
         {
+          id: 6,
           contenido:
             "Alcance nacional, atendemos a clientes en todo Argentina.",
           iconUrl:
@@ -67,36 +74,42 @@ We have the experience, talent and tools necessary for the development of new bu
 `,
       items: [
         {
+          id: 1,
           contenido:
             "We facilitate and manage the import registration of your company.",
           iconUrl:
             "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
         {
+          id: 2,
           contenido:
             "Detailed and comprehensive costing of each operation (we cost each operation in a detailed and comprehensive manner).",
           iconUrl:
             "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
         {
+          id: 3,
           contenido:
             "We facilitate the search, negotiation and selection of the most suitable supplier.",
           iconUrl:
             "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
         {
+          id: 4,
           contenido:
             "Deep knowledge of the offer of Asian products and suppliers.",
           iconUrl:
             "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
         {
+          id: 5,
           contenido:
             "Sending of samples and quality controls prior to shipment.",
           iconUrl:
             "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
         },
         {
+          id: 6,
           contenido: "National reach, we serve clients throughout Argentina.",
           iconUrl:
             "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
