@@ -18,37 +18,37 @@ const locales = {
 
           contenido:
             "Facilitamos y gestionamos la inscripción de importación de tu empresa.",
-          iconUrl: "/src/assets/icons/mesa.svg",
+          iconUrl: "/icons/mesa.svg",
         },
         {
           id: 2,
           contenido:
             "Costeo detallado e integral de cada operación (costeamos de manera detallada e integral cada operación).",
-          iconUrl: "/src/assets/icons/analic.svg",
+          iconUrl: "/icons/analic.svg",
         },
         {
           id: 3,
           contenido:
             "Facilitamos la búsqueda , negociación y selección del proveedor más apto.",
-          iconUrl: "/src/assets/icons/avion.svg",
+          iconUrl: "/icons/avion.svg",
         },
         {
           id: 4,
           contenido:
             "Profundo conocimiento de la oferta de productos y proveedores asiáticos.",
-          iconUrl: "/src/assets/icons/box-barco.svg",
+          iconUrl: "/icons/box-barco.svg",
         },
         {
           id: 5,
           contenido:
             "Envio de muestras y controles de calidad previos al embarque.",
-          iconUrl: "/src/assets/icons/envio.svg",
+          iconUrl: "/icons/envio.svg",
         },
         {
           id: 6,
           contenido:
             "Alcance nacional, atendemos a clientes en todo Argentina.",
-          iconUrl: "/src/assets/icons/ubic.svg",
+          iconUrl: "/icons/ubic.svg",
         },
       ],
     },
@@ -56,7 +56,7 @@ const locales = {
       titulo: "¿Para quiénes lo hacemos?",
       subTitulo: "EMPRESAS SIN EXPERIENCIA IMPORTADORA",
       contenido: `Un servicio integral punta a punta, transformándonos en su Departamento Externo de importaciones`,
-      palabras: "/src/assets/palabras.png",
+      palabras: "/palabras.png",
     },
     chinaSection: {
       lead: "APARTADO INTERNACIONAL",
@@ -69,37 +69,37 @@ const locales = {
         {
           id: 1,
           contenido: "Materias primas",
-          iconUrl: "/src/assets/icons/materia.svg",
+          iconUrl: "/icons/materia.svg",
         },
         {
           id: 2,
           contenido: "Insumos productivos",
-          iconUrl: "/src/assets/icons/insumos.svg",
+          iconUrl: "/icons/insumos.svg",
         },
         {
           id: 3,
           contenido: "Matrices productivas",
-          iconUrl: "/src/assets/icons/matrices.svg",
+          iconUrl: "/icons/matrices.svg",
         },
         {
           id: 4,
           contenido: "Repuestos",
-          iconUrl: "/src/assets/icons/repuestos.svg",
+          iconUrl: "/icons/repuestos.svg",
         },
         {
           id: 5,
           contenido: "Maquinaria liviana/pesada",
-          iconUrl: "/src/assets/icons/maquinaria.svg",
+          iconUrl: "/icons/maquinaria.svg",
         },
         {
           id: 6,
           contenido: "Líneas completas de producción",
-          iconUrl: "/src/assets/icons/lineas.svg",
+          iconUrl: "/icons/lineas.svg",
         },
         {
           id: 7,
           contenido: "Productos terminados",
-          iconUrl: "/src/assets/icons/productos.svg",
+          iconUrl: "/icons/productos.svg",
         },
       ],
     },
@@ -135,36 +135,36 @@ We have the experience, talent and tools necessary for the development of new bu
           id: 1,
           contenido:
             "We facilitate and manage the import registration of your company.",
-          iconUrl: "/src/assets/icons/mesa.svg",
+          iconUrl: "/icons/mesa.svg",
         },
         {
           id: 2,
           contenido:
             "Detailed and comprehensive costing of each operation (we cost each operation in a detailed and comprehensive manner).",
-          iconUrl: "/src/assets/icons/analic.svg",
+          iconUrl: "/icons/analic.svg",
         },
         {
           id: 3,
           contenido:
             "We facilitate the search, negotiation and selection of the most suitable supplier.",
-          iconUrl: "/src/assets/icons/avion.svg",
+          iconUrl: "/icons/avion.svg",
         },
         {
           id: 4,
           contenido:
             "Deep knowledge of the offer of Asian products and suppliers.",
-          iconUrl: "/src/assets/icons/box-barco.svg",
+          iconUrl: "/icons/box-barco.svg",
         },
         {
           id: 5,
           contenido:
             "Sending of samples and quality controls prior to shipment.",
-          iconUrl: "/src/assets/icons/envio.svg",
+          iconUrl: "/icons/envio.svg",
         },
         {
           id: 6,
           contenido: "National reach, we serve clients throughout Argentina.",
-          iconUrl: "/src/assets/icons/ubic.svg",
+          iconUrl: "/icons/ubic.svg",
         },
       ],
     },
@@ -172,7 +172,7 @@ We have the experience, talent and tools necessary for the development of new bu
       titulo: "For whom?",
       subTitulo: "COMPANIES WITHOUT IMPORT EXPERIENCE",
       contenido: `A comprehensive end-to-end service, transforming us into your External Import Department.`,
-      palabras: "/src/assets/palabrasIngles.png",
+      palabras: "/palabrasIngles.png",
     },
     chinaSection: {
       lead: "INTERNATIONAL APART",
@@ -185,37 +185,37 @@ We have the experience, talent and tools necessary for the development of new bu
         {
           id: 1,
           contenido: "Raw materials",
-          iconUrl: "/src/assets/icons/materia.svg",
+          iconUrl: "/icons/materia.svg",
         },
         {
           id: 2,
           contenido: "Production materials",
-          iconUrl: "/src/assets/icons/insumos.svg",
+          iconUrl: "/icons/insumos.svg",
         },
         {
           id: 3,
           contenido: "Production lines",
-          iconUrl: "/src/assets/icons/matrices.svg",
+          iconUrl: "/icons/matrices.svg",
         },
         {
           id: 4,
           contenido: "Spare parts",
-          iconUrl: "/src/assets/icons/repuestos.svg",
+          iconUrl: "/icons/repuestos.svg",
         },
         {
           id: 5,
           contenido: "Light/large machinery",
-          iconUrl: "/src/assets/icons/maquinaria.svg",
+          iconUrl: "/icons/maquinaria.svg",
         },
         {
           id: 6,
           contenido: "Complete production lines",
-          iconUrl: "/src/assets/icons/lineas.svg",
+          iconUrl: "/icons/lineas.svg",
         },
         {
           id: 7,
           contenido: "Finished products",
-          iconUrl: "/src/assets/icons/productos.svg",
+          iconUrl: "/icons/productos.svg",
         },
       ],
     },

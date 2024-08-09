@@ -2,6 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Suspense } from "react";
 import Loading from "./Loading/Loading";
 import getImageObject from "./limpiadorDeKeys";
+import Loading1 from "../../assets/Loading.png";
+import Logo from "../../assets/Logo.png";
+import carrousel from "../../assets/carrousel.png";
+import head1 from "../../assets/head1.png";
+import isologo from "../../assets/isologo.png";
+import chinaSection from "../../assets/chinaSection.jpg";
 
 const preloadImage = (src) => {
   return new Promise((resolve, reject) => {
@@ -21,12 +27,12 @@ const ResourceLoader = ({ children }) => {
       try {
         // URLs de las imágenes que deseas precargar
         const imageUrls = [
-          "/src/assets/Loading.png",
-          "/src/assets/Logo.png",
-          "/src/assets/carrousel.png",
-          "/src/assets/head1.png",
-          "/src/assets/isologo.png",
-          "/src/assets/chinaSection.jpg",
+          Loading1,
+          Logo,
+          carrousel,
+          head1,
+          isologo,
+          chinaSection,
         ];
 
         // Precargar todas las imágenes
