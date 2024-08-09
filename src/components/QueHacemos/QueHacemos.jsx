@@ -1,6 +1,6 @@
 import useLocalizedContent from "../../hooks/useLocalizedContent";
+import ListaDeItems from "../ListaDeItems/ListaDeItems";
 import LeftCard from "./LeftCard";
-import RightCard from "./RightCard";
 
 const QueHacemos = () => {
   const { queHacemosSection } = useLocalizedContent();
@@ -11,7 +11,7 @@ const QueHacemos = () => {
           titulo={queHacemosSection.titulo}
           contenido={queHacemosSection.contenido}
         />
-        <RightCard items={queHacemosSection.items} />
+        <ListaDeItems items={queHacemosSection.items} efect="right" />
       </div>
     </section>
   );

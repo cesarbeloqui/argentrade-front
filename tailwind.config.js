@@ -1,6 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 import forms from "@tailwindcss/forms";
 import animations from "@midudev/tailwind-animations";
+function textStrokeColor({ addUtilities, theme }) {
+  const textStrokeValues = theme("textStroke");
+  const colors = theme("colors");
+
+  const textStrokeUtilities = Object.entries(textStrokeValues).reduce(
+    (acc, [key, value]) => {
+      Object.entries(colors).forEach(([colorName, colorValue]) => {
+        acc[`.text-stroke-${key}-${colorName}`] = {
+          "-webkit-text-stroke": `${value} ${colorValue}`,
+          "text-stroke": `${value} ${colorValue}`, // Para navegadores compatibles
+          color: "transparent",
+        };
+      });
+      return acc;
+    },
+    {}
+  );
+
+  addUtilities(textStrokeUtilities, ["responsive", "hover"]);
+}
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
@@ -30,6 +50,8 @@ export default {
     extend: {
       backgroundImage: {
         "hero-1": "url('/src/assets/head1.png')",
+        "china-section": "url('/src/assets/chinaSection.jpg')",
+        mapa: "url('/src/assets/fondoMapa.png')",
       },
       fontFamily: {
         "pontiac-black": ["PontiacBlack", "sans-serif"],
@@ -41,7 +63,14 @@ export default {
         "pontiac-regular": ["PontiacRegular", "sans-serif"],
         "pontiac-regular-italic": ["PontiacRegularItalic", "sans-serif"],
       },
+      // Agregar valores arbitrarios personalizados
+      textStroke: {
+        default: "1px",
+        1: "1px",
+        2: "2px",
+        4: "4px",
+      },
     },
   },
-  plugins: [forms, animations, ],
+  plugins: [forms, animations, textStrokeColor],
 };

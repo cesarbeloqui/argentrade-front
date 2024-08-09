@@ -1,4 +1,5 @@
 import { PropTypes } from "prop-types";
+import ReasaltarTexto from "../ReasaltarTexto/ResaltarTexto";
 
 const LeftCard = ({ titulo, contenido }) => {
   const lines = contenido.split("\n");
@@ -17,7 +18,7 @@ const LeftCard = ({ titulo, contenido }) => {
           {lines.map((line, index) => {
             return (
               <p key={index} className={index === 0 ? "" : "pt-6"}>
-                {line}
+                <ReasaltarTexto text={line} className="font-bold"/>
               </p>
             );
           })}

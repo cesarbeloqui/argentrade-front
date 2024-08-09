@@ -82,7 +82,7 @@ body {
   animation-range: entry 10% cover 30%;
   animation-fill-mode: both;
 }
-@keyframes trans-x {
+@keyframes trans-x-right {
   from {
     transform: translateX(50px);
     opacity: 0; /* Opcional para desvanecimiento */
@@ -93,9 +93,22 @@ body {
   }
 }
 
-.animated-enter {
-  animation: trans-x 0.5s ease-out;
+.animated-enter-right {
+  animation: trans-x-right 0.5s ease-out;
 }
-.animate-out {
-  animation: trans-x-out 1s ease-out;
+@keyframes trans-x-left {
+  from {
+    transform: translateX(-50px);
+    opacity: 0; /* Opcional para desvanecimiento */
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1; /* Opcional para desvanecimiento */
+  }
 }
+
+.animated-enter-left {
+  animation: trans-x-left 0.5s ease-out;
+}
+
+

@@ -25,8 +25,8 @@ const ResourceLoader = ({ children }) => {
           "/src/assets/Logo.png",
           "/src/assets/carrousel.png",
           "/src/assets/head1.png",
-          "/src/assets/head2.png",
           "/src/assets/isologo.png",
+          "/src/assets/chinaSection.jpg",
         ];
 
         // Precargar todas las imágenes
