@@ -103,6 +103,17 @@ const locales = {
         },
       ],
     },
+    contactoSection: {
+      titulo: "Contacto",
+      subTitulo: "Hacé crecer tu negocio",
+      nombre: "Nombre y Apellido",
+      email: "Email",
+      telefono: "Teléfono",
+      empresa: "Empresa",
+      mensaje: "Mensaje, consulta o sugerencia",
+      contenido: `No esperes más, y comienza a trabajar con nosotros para expandir los horizontes de tu emprendimiento o negocio.`,
+      subContenido: `Solicitá asesoramiento ahora`,
+    },
   },
   en: {
     inicio: "Home",
@@ -123,42 +134,36 @@ We have the experience, talent and tools necessary for the development of new bu
           id: 1,
           contenido:
             "We facilitate and manage the import registration of your company.",
-          iconUrl:
-            "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          iconUrl: "/src/assets/icons/mesa.svg",
         },
         {
           id: 2,
           contenido:
             "Detailed and comprehensive costing of each operation (we cost each operation in a detailed and comprehensive manner).",
-          iconUrl:
-            "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          iconUrl: "/src/assets/icons/analic.svg",
         },
         {
           id: 3,
           contenido:
             "We facilitate the search, negotiation and selection of the most suitable supplier.",
-          iconUrl:
-            "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          iconUrl: "/src/assets/icons/avion.svg",
         },
         {
           id: 4,
           contenido:
             "Deep knowledge of the offer of Asian products and suppliers.",
-          iconUrl:
-            "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          iconUrl: "/src/assets/icons/box-barco.svg",
         },
         {
           id: 5,
           contenido:
             "Sending of samples and quality controls prior to shipment.",
-          iconUrl:
-            "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          iconUrl: "/src/assets/icons/envio.svg",
         },
         {
           id: 6,
           contenido: "National reach, we serve clients throughout Argentina.",
-          iconUrl:
-            "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          iconUrl: "/src/assets/icons/ubic.svg",
         },
       ],
     },
@@ -179,45 +184,50 @@ We have the experience, talent and tools necessary for the development of new bu
         {
           id: 1,
           contenido: "Raw materials",
-          iconUrl:
-            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          iconUrl: "/src/assets/icons/materia.svg",
         },
         {
           id: 2,
           contenido: "Production materials",
-          iconUrl:
-            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          iconUrl: "/src/assets/icons/insumos.svg",
         },
         {
           id: 3,
           contenido: "Production lines",
-          iconUrl: "/src/assets/box.svg",
+          iconUrl: "/src/assets/icons/matrices.svg",
         },
         {
           id: 4,
           contenido: "Spare parts",
-          iconUrl:
-            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          iconUrl: "/src/assets/icons/repuestos.svg",
         },
         {
           id: 5,
           contenido: "Light/large machinery",
-          iconUrl:
-            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          iconUrl: "/src/assets/icons/maquinaria.svg",
         },
         {
           id: 6,
           contenido: "Complete production lines",
-          iconUrl:
-            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          iconUrl: "/src/assets/icons/lineas.svg",
         },
         {
           id: 7,
           contenido: "Finished products",
-          iconUrl:
-            "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+          iconUrl: "/src/assets/icons/productos.svg",
         },
       ],
+    },
+    contactoSection: {
+      titulo: "Contact",
+      subTitulo: "Grow your business",
+      nombre: "Name and surname",
+      email: "Email",
+      telefono: "Phone",
+      empresa: "Company",
+      mensaje: "Message, inquiry or suggestion",
+      contenido: `We are waiting for you to start working with us to expand the horizons of your business or business.`,
+      subContenido: `Request a consultation now`,
     },
   },
 };

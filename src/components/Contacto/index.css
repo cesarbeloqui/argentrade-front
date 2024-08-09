@@ -1,0 +1,45 @@
+.container-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 33px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo titulo ."
+    "nombre email contenido"
+    "telefono empresa contenido"
+    "mensaje mensaje ."
+    "boton boton .";
+}
+
+.titulo {
+  grid-area: titulo;
+}
+
+.nombre {
+  grid-area: nombre;
+}
+
+.email {
+  grid-area: email;
+}
+
+.telefono {
+  grid-area: telefono;
+}
+
+.empresa {
+  grid-area: empresa;
+}
+
+.mensaje {
+  grid-area: mensaje;
+}
+
+.boton {
+  grid-area: boton;
+}
+
+.contenido {
+  grid-area: contenido;
+}
