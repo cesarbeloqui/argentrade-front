@@ -53,16 +53,6 @@ export default {
         "china-section": "url('/src/assets/chinaSection.jpg')",
         mapa: "url('/src/assets/fondoMapa.png')",
       },
-      fontFamily: {
-        "pontiac-black": ["PontiacBlack", "sans-serif"],
-        "pontiac-black-italic": ["PontiacBlackItalic", "sans-serif"],
-        "pontiac-bold": ["PontiacBold", "sans-serif"],
-        "pontiac-bold-italic": ["PontiacBoldItalic", "sans-serif"],
-        "pontiac-light": ["PontiacLight", "sans-serif"],
-        "pontiac-light-italic": ["PontiacLightItalic", "sans-serif"],
-        "pontiac-regular": ["PontiacRegular", "sans-serif"],
-        "pontiac-regular-italic": ["PontiacRegularItalic", "sans-serif"],
-      },
       // Agregar valores arbitrarios personalizados
       textStroke: {
         default: "1px",

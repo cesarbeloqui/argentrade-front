@@ -1,8 +1,8 @@
 .container-contacto {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 33px;
+  grid-template-columns: 0.5fr 0.5fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 2fr 0.5fr;
+  gap: 1.5vw 3vw;
   grid-auto-flow: row;
   grid-template-areas:
     "titulo titulo ."
@@ -43,3 +43,4 @@
 .contenido {
   grid-area: contenido;
 }
+

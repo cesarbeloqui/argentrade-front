@@ -113,6 +113,7 @@ const locales = {
       mensaje: "Mensaje, consulta o sugerencia",
       contenido: `No esperes más, y comienza a trabajar con nosotros para expandir los horizontes de tu emprendimiento o negocio.`,
       subContenido: `Solicitá asesoramiento ahora`,
+      boton: "Enviar mensaje",
     },
   },
   en: {
@@ -228,6 +229,7 @@ We have the experience, talent and tools necessary for the development of new bu
       mensaje: "Message, inquiry or suggestion",
       contenido: `We are waiting for you to start working with us to expand the horizons of your business or business.`,
       subContenido: `Request a consultation now`,
+      boton: "Send message",
     },
   },
 };
