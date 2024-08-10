@@ -1,7 +1,6 @@
 import "./index.css";
 import svgCirculo from "../../assets/svgCirculo.svg";
 import useIntersection from "../../hooks/useIntersection";
-import palabras from "../../assets/palabras.png";
 import useLocalizedContent from "../../hooks/useLocalizedContent";
 
 const ParaQuienes = () => {
