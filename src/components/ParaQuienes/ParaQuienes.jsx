@@ -15,7 +15,7 @@ const ParaQuienes = () => {
   return (
     <section
       id="para-quienes"
-      className="sm:flex flex-col h-[150vh] sm:bg-secondary sm:items-center sm:p-14"
+      className="sm:flex flex-col sm:bg-secondary sm:items-center sm:p-14"
     >
       <div className="sm:w-[39vw] sm:mb-[1.9vw]">
         <h2 className="sm:text-center sm:text-[2.5vw] sm:font-bold sm:text-white sm:mb-[2.7vw]">
@@ -29,7 +29,9 @@ const ParaQuienes = () => {
           {paraQuienesSection.contenido}
         </p>
       </div>
-      <div className={`sm:relative sm:w-[90vw] sm:h-[100vh] sm:left-3`}>
+      <div
+        className={`sm:relative sm:w-[90vw] sm:left-3 my-[5%]`}
+      >
         <img
           src={paraQuienesSection.palabras}
           alt=""
@@ -40,7 +42,7 @@ const ParaQuienes = () => {
           ref={(el) => (elementsRef.current[elementId] = el)}
           src={svgCirculo}
           alt=""
-          className={`sm:absolute sm:top-0 sm:left-0 sm:right-0 sm:bottom-0 sm:m-auto sm:h-[30vw] sm:w-[30vw] ${isVisible ? "animate-roll-in" : ""}`}
+          className={`sm:relative sm:top-0 sm:left-0 sm:right-0 sm:bottom-0 sm:m-auto sm:h-[30vw] sm:w-[30vw] ${isVisible ? "animate-roll-in" : ""}`}
         />
       </div>
     </section>

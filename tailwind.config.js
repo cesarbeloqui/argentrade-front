@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 import forms from "@tailwindcss/forms";
 import animations from "@midudev/tailwind-animations";
+import flowbite from "flowbite-react/tailwind";
+
 function textStrokeColor({ addUtilities, theme }) {
   const textStrokeValues = theme("textStroke");
   const colors = theme("colors");
@@ -22,7 +24,7 @@ function textStrokeColor({ addUtilities, theme }) {
   addUtilities(textStrokeUtilities, ["responsive", "hover"]);
 }
 export default {
-  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  content: ["./index.html", "./src/**/*.{js,jsx}", flowbite.content()],
   theme: {
     colors: {
       primary: "#F2F2F2",
@@ -50,8 +52,12 @@ export default {
     extend: {
       backgroundImage: {
         "hero-1": "url('/src/assets/head1.png')",
+        "hero-2": "url('/src/assets/head2.jpg')",
+        "hero-3": "url('/src/assets/head3.jpg')",
         "china-section": "url('/src/assets/chinaSection.jpg')",
         mapa: "url('/src/assets/fondoMapa.png')",
+        contacto: "url('/src/assets/contacto.png')",
+        wp: "url('/icons/icon-wp-fijo.svg')",
       },
       // Agregar valores arbitrarios personalizados
       textStroke: {
@@ -62,5 +68,5 @@ export default {
       },
     },
   },
-  plugins: [forms, animations, textStrokeColor],
+  plugins: [forms, animations, textStrokeColor, flowbite.plugin()],
 };

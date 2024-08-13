@@ -1,5 +1,6 @@
 const locales = {
   es: {
+    whatsapp: {},
     inicio: "Inicio",
     queHacemos: "¿Que hacemos?",
     paraQuienes: "¿Para quienes?",
@@ -7,11 +8,42 @@ const locales = {
     contacto: "Contacto",
     subTitleSlider1:
       "Facilitamos importaciones desde China para el éxito global de tu empresa",
+    slider2: {
+      bg: "bg-hero-2",
+      items: [
+        {
+          id: 1,
+          titulo: "Seguridad y confiabilidad",
+        },
+        {
+          id: 2,
+          titulo: "Incremento de rentabilidad",
+        },
+        {
+          id: 3,
+          titulo: "Servicio punta a punta",
+        },
+      ],
+    },
+    slider3: {
+      bg: "bg-hero-3",
+      items: [
+        {
+          id: 1,
+          titulo: "Acceso a tecnología de punta",
+        },
+        {
+          id: 2,
+          titulo: "Atención personalizada",
+        },
+      ],
+    },
     queHacemosSection: {
       titulo: "¿Qué hacemos?",
-      contenido: `Somos especialistas en la gestión y servicios de importación a nivel mundial, enfocados en el {r}mercado asiático{/r}.
-      Contamos con la experiencia, talento y herramientas necesarias para importar cualquier tipo de producto.
-      Nos convertimos en el departamento de {r}Comercio Exterior de tu empresa{/r} para que mejoren su rentabilidad, competitividad y costos y sigan enfocados en vender más y desarrollar nuevos negocios.`,
+      contenido: `Nos convertimos en el departamento de comercio exterior de tu empresa logrando mejorar su rentabilidad y competitividad
+Somos especialistas en servicios de importación a nivel mundial con socios estratégicos ubicados en China
+Contamos con la experiencia, el talento y las herramientas necesarias para el desarrollo de nuevas unidades de negocio
+`,
       items: [
         {
           id: 1,
@@ -23,7 +55,7 @@ const locales = {
         {
           id: 2,
           contenido:
-            "Costeo detallado e integral de cada operación (costeamos de manera detallada e integral cada operación).",
+            "Costeo detallado e integral de cada operación.",
           iconUrl: "/icons/analic.svg",
         },
         {
@@ -115,6 +147,40 @@ const locales = {
       subContenido: `Solicitá asesoramiento ahora`,
       boton: "Enviar mensaje",
     },
+    footer: {
+      lista1: [
+        {
+          titulo: "Buenos Aires, Argentina",
+          icon: "/icons/icon-ubic.svg",
+        },
+        {
+          titulo: "+54 9 11 2345 6789",
+          icon: "/icons/icon-tel.svg",
+        },
+        {
+          titulo: "info@argentrade.ar",
+          icon: "/icons/icon-email.svg",
+        },
+      ],
+      redes: [
+        {
+          link: "",
+          icon: "/icons/icon-ig.svg",
+        },
+        {
+          link: "",
+          icon: "/icons/icon-fb.svg",
+        },
+        {
+          link: "",
+          icon: "/icons/icon-link.svg",
+        },
+        {
+          link: "",
+          icon: "/icons/icon-wp.svg",
+        },
+      ],
+    },
   },
   en: {
     inicio: "Home",
@@ -124,11 +190,41 @@ const locales = {
     contacto: "Contact",
     subTitleSlider1:
       "We facilitate imports from China for the global success of your company",
+    slider2: {
+      bg: "bg-hero-2",
+      items: [
+        {
+          id: 1,
+          titulo: "Security and Reliability",
+        },
+        {
+          id: 2,
+          titulo: "Increased Profitability",
+        },
+        {
+          id: 3,
+          titulo: "End-to-End Service",
+        },
+      ],
+    },
+    slider3: {
+      bg: "bg-hero-3",
+      items: [
+        {
+          id: 1,
+          titulo: "Access to Cutting-Edge Technology",
+        },
+        {
+          id: 2,
+          titulo: "Personalized Attention",
+        },
+      ],
+    },
     queHacemosSection: {
       titulo: "What do we do?",
-      contenido: `We become the foreign trade department of your company, improving its profitability and competitiveness.
-We are specialists in import services worldwide with strategic partners located in China
-We have the experience, talent and tools necessary for the development of new business units.
+      contenido: `We become your company's foreign trade department, improving its profitability and competitiveness.
+We specialize in global import services with strategic partners located in China.
+We have the experience, talent, and tools necessary for the development of new business units.
 `,
       items: [
         {
@@ -140,7 +236,7 @@ We have the experience, talent and tools necessary for the development of new bu
         {
           id: 2,
           contenido:
-            "Detailed and comprehensive costing of each operation (we cost each operation in a detailed and comprehensive manner).",
+            "Detailed and comprehensive costing of each operation.",
           iconUrl: "/icons/analic.svg",
         },
         {
@@ -230,6 +326,40 @@ We have the experience, talent and tools necessary for the development of new bu
       contenido: `We are waiting for you to start working with us to expand the horizons of your business or business.`,
       subContenido: `Request a consultation now`,
       boton: "Send message",
+    },
+    footer: {
+      lista1: [
+        {
+          titulo: "Buenos Aires, Argentina",
+          icon: "/icons/icon-ubic.svg",
+        },
+        {
+          titulo: "+54 9 11 2345 6789",
+          icon: "/icons/icon-tel.svg",
+        },
+        {
+          titulo: "info@argentrade.ar",
+          icon: "/icons/icon-email.svg",
+        },
+      ],
+      redes: [
+        {
+          link: "",
+          icon: "/icons/icon-ig.svg",
+        },
+        {
+          link: "",
+          icon: "/icons/icon-fb.svg",
+        },
+        {
+          link: "",
+          icon: "/icons/icon-link.svg",
+        },
+        {
+          link: "",
+          icon: "/icons/icon-wp.svg",
+        },
+      ],
     },
   },
 };

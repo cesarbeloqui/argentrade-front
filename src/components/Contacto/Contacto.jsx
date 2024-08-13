@@ -16,17 +16,20 @@ const Contacto = () => {
     boton,
   } = contactoSection;
   const stylesInputs =
-    "w-full h-[3.5vw] border-0 shadow-sm ring-2 ring-inset ring-naranja focus:ring-2 focus:ring-inset focus:ring-secondary";
+    "sm:w-full sm:h-[3.5vw] border-0 shadow-sm ring-2 ring-inset ring-naranja focus:ring-2 focus:ring-inset focus:ring-secondary";
 
   return (
-    <section id="contacto" className="bg-white">
+    <section
+      id="contacto"
+      className="bg-white bg-contacto bg-right-bottom bg-no-repeat bg-[length:40%_auto] sm:pb-[10%]"
+    >
       <form action="">
-        <div className="container-contacto pl-[10vw] pt-[4vw]">
-          <div className="titulo mb-[2vw]">
-            <h1 className="text-secondary text-left font-bold text-[2.7vw]">
+        <div className="container-contacto sm:pl-[10vw] sm:pt-[4vw]">
+          <div className="titulo sm:mb-[2vw]">
+            <h1 className="text-secondary text-left font-bold sm:text-[2.7vw]">
               {titulo}
             </h1>
-            <h2 className="text-secondary text-left font-semibold text-[1.5vw]">
+            <h2 className="text-secondary text-left font-semibold sm:text-[1.5vw]">
               {subTitulo}
             </h2>
           </div>
@@ -54,22 +57,25 @@ const Contacto = () => {
           <div className="empresa">
             <input className={stylesInputs} type="text" placeholder={empresa} />
           </div>
-          <div className="mensaje h-[15vw]">
+          <div className="mensaje sm:h-[15vw]">
             <textarea
-              className="w-full h-full border-0 shadow-sm ring-2 ring-inset ring-naranja focus:ring-2 focus:ring-inset focus:ring-secondary resize-none"
+              className="sm:w-full sm:h-full border-0 shadow-sm ring-2 ring-inset ring-naranja focus:ring-2 focus:ring-inset focus:ring-secondary resize-none"
               placeholder={mensaje}
             />
           </div>
           <div className="boton">
             <button
               type="button"
-              className="rounded-md bg-naranja px-3.5 py-2.5 text-sm font-semibold text-white shadow-gray-900 shadow-md hover:bg-azul focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul w-full"
+              className="rounded-md bg-naranja sm:px-3.5 sm:py-2.5 text-sm font-semibold text-white shadow-gray-900 shadow-md hover:bg-azul focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul sm:w-full"
             >
               {boton}
             </button>
           </div>
-          <div className="contenido">
-            {contenido} {subContenido}
+          <div className="contenido sm:pr-[40%] text-left text-secondary">
+            <span className="font-medium">{contenido}</span>
+            <br />
+            <br />
+            <span className="font-medium text-xl">{subContenido}</span>
           </div>
         </div>
       </form>

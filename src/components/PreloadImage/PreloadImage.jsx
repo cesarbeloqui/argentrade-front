@@ -8,6 +8,7 @@ import carrousel from "../../assets/carrousel.png";
 import head1 from "../../assets/head1.png";
 import isologo from "../../assets/isologo.png";
 import chinaSection from "../../assets/chinaSection.jpg";
+import contacto from "../../assets/contacto.png";
 
 const preloadImage = (src) => {
   return new Promise((resolve, reject) => {
@@ -33,6 +34,7 @@ const ResourceLoader = ({ children }) => {
           head1,
           isologo,
           chinaSection,
+          contacto,
         ];
 
         // Precargar todas las imágenes

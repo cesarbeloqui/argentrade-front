@@ -1,0 +1,18 @@
+.container-footer {
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr 1fr .25fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". logo . contacto .";
+  width: 100%;
+}
+
+.logo {
+  grid-area: logo;
+  padding: 0;
+}
+
+.contacto {
+  grid-area: contacto;
+}

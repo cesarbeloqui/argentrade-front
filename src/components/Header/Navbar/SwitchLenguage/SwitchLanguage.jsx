@@ -3,6 +3,8 @@ import { Switch } from "@headlessui/react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectLanguage, setLanguage } from "../../../../redux/languageSlice";
 import { useEffect } from "react";
+import arg from "../../../../assets/arg.png"
+import eeuu from "../../../../assets/eeuu.png"
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -26,10 +28,14 @@ export default function Example() {
       dispatch(setLanguage("es"));
     }
   };
+  const tamaño = "5"
+  const banderas = `w-${tamaño} h-${tamaño} `;
 
   return (
     <div className="flex justify-center items-center">
-      <span className="font-medium mr-2 text-sm">ES</span>
+      <span className="mr-2 bg-naranja p-1 rounded-full">
+        <img src={arg} alt="es" className={`${banderas}`} />
+      </span>
       <Switch
         checked={enabled}
         onChange={changeLanguage}
@@ -55,7 +61,9 @@ export default function Example() {
           )}
         />
       </Switch>
-      <span className="font-medium ml-1 text-sm">EN</span>
+      <span className="ml-1 bg-naranja p-1 rounded-full">
+        <img src={eeuu} alt="en" className={`${banderas}`} />
+      </span>
     </div>
   );
 }
