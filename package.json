@@ -10,12 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.5",
     "@midudev/tailwind-animations": "^0.0.7",
     "@reduxjs/toolkit": "^2.2.7",
     "alpinejs": "^3.14.1",
     "autoprefixer": "^10.4.20",
+    "emailjs": "^4.0.3",
     "flowbite": "^2.5.1",
     "flowbite-react": "^0.10.1",
     "postcss": "^8.4.40",
