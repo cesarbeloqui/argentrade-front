@@ -6,13 +6,13 @@ const Footer = () => {
   const { footer } = useLocalizedContent();
   const { lista1, redes } = footer;
   return (
-    <section className="container-footer w-full bg-secondary py-8">
+    <section className="container-footer w-full bg-secondary sm:p-0 py-8 sm:py-8">
       <div></div>
       <div className="logo">
         <img src={logo} alt="" className="w-[90%]" />
       </div>
       <div></div>
-      <div className="contacto flex flex-col">
+      <div className="contacto flex flex-col mt-10 ml-10 sm:m-0">
         <ul>
           {lista1.map((item, index) => (
             <ul

@@ -42,7 +42,7 @@ const Navbar = ({ navigationItems, Logo }) => {
 
   return (
     <nav className="bg-white sticky top-0 z-50">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
         <div className="flex h-16 justify-between">
           <div className="flex w-full justify-between">
             <div className="flex flex-shrink-0 items-center">
@@ -57,12 +57,13 @@ const Navbar = ({ navigationItems, Logo }) => {
                 alt="Argentrade"
               />
             </div>
-            <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+            <div className="hidden md:ml-6 md:flex md:space-x-8">
               {navigationItems.map(renderNavItem)}
               <SwitchLanguage />
             </div>
           </div>
-          <div className="-mr-2 flex items-center sm:hidden">
+
+          <div className="-mr-2 flex items-center md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={`inline-flex items-center justify-center rounded-md p-2 ${isOpen ? "text-naranja" : "text-azul"} focus:outline-none focus:ring-2 focus:ring-inset focus:ring-naranja`}
@@ -78,12 +79,13 @@ const Navbar = ({ navigationItems, Logo }) => {
         </div>
       </div>
       <div
-        className={`sm:hidden ${
+        className={`md:hidden ${
           isOpen ? "opacity-100 h-auto" : "opacity-0 h-0"
         } overflow-hidden transition-all duration-300 ease-in-out`}
       >
         <div className="space-y-1 pt-2 pb-3">
           {navigationItems.map(renderMobileNavItem)}
+          <SwitchLanguage />
         </div>
       </div>
     </nav>

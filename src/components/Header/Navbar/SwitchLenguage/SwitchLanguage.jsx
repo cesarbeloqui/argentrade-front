@@ -32,7 +32,7 @@ export default function Example() {
   const banderas = `w-${tamaño} h-${tamaño} `;
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center ">
       <span className="mr-2 bg-naranja p-1 rounded-full">
         <img src={arg} alt="es" className={`${banderas}`} />
       </span>
@@ -57,7 +57,7 @@ export default function Example() {
           aria-hidden="true"
           className={classNames(
             enabled ? "translate-x-5" : "translate-x-0",
-            "pointer-events-none absolute left-0 inline-block h-5 w-5 transform rounded-full border border-gray-200 bg-secondary shadow ring-0 transition-transform duration-200 ease-in-out"
+            "pointer-events-none absolute left-0 inline-block  h-5 w-5 transform rounded-full border border-gray-200 bg-secondary shadow ring-0 transition-transform duration-200 ease-in-out"
           )}
         />
       </Switch>

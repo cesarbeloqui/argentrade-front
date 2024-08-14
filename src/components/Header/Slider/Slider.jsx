@@ -17,11 +17,12 @@ const Slider = () => {
     <>
       {/* <Slider1 {...{ subTittle, carrusel, isologo }} /> */}
 
+      {/*             */}
       <div className="h-[65vh] sm:h-[39.88vw]">
         <Carousel theme={customTheme} slideInterval={5000} pauseOnHover>
           <Slider1 />
-          <Slider2 slider={slider2.items} bg={ slider2.bg} /> 
-          <Slider2 slider={slider3.items} bg={slider3.bg } /> 
+          <Slider2 slider={slider2.items} bg={slider2.bg} />
+          <Slider2 slider={slider3.items} bg={slider3.bg} />
         </Carousel>
       </div>
     </>

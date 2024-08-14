@@ -8,8 +8,8 @@ const ListaDeItems = ({ items, efect }) => {
     } */
 
   return (
-    <div className="sm:col-start-2 sm:col-end-3 sm:row-start-2 sm:row-end-5">
-      <ul role="list" className="flex flex-col gap-y-3 w-full">
+    <div className="sm:col-start-2 sm:col-end-3 sm:row-start-2 sm:row-end-5 overflow-hidden">
+      <ul role="list" className="flex flex-col gap-y-3 w-full pl-[4vw]">
         {items.map((item, index) => {
           const isActive = intersectingItems[item.id]; // Usar el id del item para verificar si está en la vista
           return (
@@ -19,9 +19,9 @@ const ListaDeItems = ({ items, efect }) => {
               ref={(el) => (elementsRef.current[index] = el)} // Asigna la referencia al elemento
               className={`relative flex flex-col items-center py-5 px-[3vw] bg-white sm:h-full sm:w-full ${isActive ? `animated-enter-${efect}` : ""}`}
             >
-              <div className="flex relative sm:absolute sm:inset-0 h-[14vw] w-[14vw] sm:h-[4.5vw] sm:w-[4.5vw] sm:-left-8 my-auto rounded-full justify-center items-center bg-naranja">
+              <div className="flex relative sm:absolute sm:z-10 sm:inset-0 h-[14vw] w-[14vw] sm:h-[4.5vw] sm:w-[4.5vw] sm:-left-8 my-auto rounded-full justify-center items-center bg-naranja">
                 <img
-                  className="h-[12vw] sm:h-[3vw]"
+                  className="h-[12vw] sm:h-[3vw] object-cover"
                   src={item.iconUrl}
                   alt=""
                 />

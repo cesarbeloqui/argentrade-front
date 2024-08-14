@@ -1,46 +1,51 @@
 .container-contacto {
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr 1fr;
-  grid-template-rows: 0.5fr 0.5fr 0.5fr 2fr 0.5fr;
-  gap: 1.5vw 3vw;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "titulo titulo ."
-    "nombre email contenido"
-    "telefono empresa contenido"
-    "mensaje mensaje ."
-    "boton boton .";
+  display: flex;
+  flex-direction: column;
 }
+@media (min-width: 640px) {
+  .container-contacto {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 2fr 0.5fr;
+    gap: 1.5vw 3vw;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "titulo titulo ."
+      "nombre email contenido"
+      "telefono empresa contenido"
+      "mensaje mensaje ."
+      "boton boton .";
+  }
 
-.titulo {
-  grid-area: titulo;
+  .titulo {
+    grid-area: titulo;
+  }
+
+  .nombre {
+    grid-area: nombre;
+  }
+
+  .email {
+    grid-area: email;
+  }
+
+  .telefono {
+    grid-area: telefono;
+  }
+
+  .empresa {
+    grid-area: empresa;
+  }
+
+  .mensaje {
+    grid-area: mensaje;
+  }
+
+  .boton {
+    grid-area: boton;
+  }
+
+  .contenido {
+    grid-area: contenido;
+  }
 }
-
-.nombre {
-  grid-area: nombre;
-}
-
-.email {
-  grid-area: email;
-}
-
-.telefono {
-  grid-area: telefono;
-}
-
-.empresa {
-  grid-area: empresa;
-}
-
-.mensaje {
-  grid-area: mensaje;
-}
-
-.boton {
-  grid-area: boton;
-}
-
-.contenido {
-  grid-area: contenido;
-}
-

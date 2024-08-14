@@ -4,8 +4,8 @@ import ReasaltarTexto from "../ReasaltarTexto/ResaltarTexto";
 const ChinaSection = () => {
   const { chinaSection } = useLocalizedContent();
   return (
-    <div className="relative h-[65vh] sm:h-[39.4vw] sm:w-full bg-china-section bg-no-repeat bg-center bg-cover flex justify-end items-middle">
-      <div className="sm:w-[49%] sm:pt-[8vw] sm:pr-[4vw]">
+    <div className="relative h-[65vh] sm:h-[30vw] sm:w-full bg-china-section bg-no-repeat bg-center bg-cover flex justify-end items-middle p-14 sm:p-0">
+      <div className="sm:w-[49%] sm:pt-[4vw] sm:pr-[4vw]">
         <h1 className="sm:text-[2.2vw] font-extrabold text-stroke-1-white text-left">
           {chinaSection.lead}
         </h1>
