@@ -9,7 +9,7 @@ const ListaDeItems = ({ items, efect }) => {
 
   return (
     <div className="sm:col-start-2 sm:col-end-3 sm:row-start-2 sm:row-end-5 overflow-hidden">
-      <ul role="list" className="flex flex-col gap-y-3 w-full pl-[4vw]">
+      <ul role="list" className="flex flex-col gap-y-3 w-full md:pl-[4.2vw]">
         {items.map((item, index) => {
           const isActive = intersectingItems[item.id]; // Usar el id del item para verificar si está en la vista
           return (
