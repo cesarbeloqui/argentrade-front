@@ -2,6 +2,7 @@ import "./index.css";
 import SvgCirculo from "./SvgCirculo";
 import useIntersection from "../../hooks/useIntersection";
 import useLocalizedContent from "../../hooks/useLocalizedContent";
+import CirculoSpanish from "../Circulo/CirculoSpanish";
 
 const ParaQuienes = () => {
   const [elementsRef, intersectingItems] = useIntersection({
@@ -42,9 +43,8 @@ const ParaQuienes = () => {
           alt=""
           className={`relative top-[8vw] left-[16vw] sm:top-0 sm:left-0 sm:right-0 sm:bottom-0 sm:m-auto h-[80%] sm:h-[80%] sm:w-[32%] ${isVisible ? "animate-roll-in" : ""}`}
         /> */}
-
         <SvgCirculo
-          className={`h-[80vw] w-[80vw] sm:h-[50vw] sm:w-[50vw] -my-[12%] ${isVisible ? "animate-zoom-in" : ""}`}
+          className={`relative left-[4vw] sm:left-[2vw] mt-3 sm:mt-0 h-[70vw] w-[90vw] sm:h-[35vw] sm:w-[50vw] ${isVisible ? "animate-zoom-in" : ""}`}
           id={elementId}
           elementsRef={elementsRef}
         />

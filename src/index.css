@@ -8,6 +8,18 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "Raleway-SemiBold";
+  src: local("Raleway");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway-ExtraBold';
+  src: local('Raleway');
+  font-weight: 800;
+  font-style: normal;
+}
 body {
   margin: 0;
   display: flex;

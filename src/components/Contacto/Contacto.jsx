@@ -57,9 +57,6 @@ const Contacto = () => {
             </h2>
           </div>
           <div className="nombre">
-            <label htmlFor="email" className="sr-only">
-              Email
-            </label>
             <input
               name="name"
               id="nombre"

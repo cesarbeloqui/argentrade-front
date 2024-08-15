@@ -12,7 +12,7 @@ const Footer = () => {
         <img src={logo} alt="" className="w-[90%]" />
       </div>
       <div></div>
-      <div className="contacto flex flex-col mt-10 ml-10 sm:m-0">
+      <div className="contacto flex flex-col mt-10 ml-12 sm:m-0">
         <ul>
           {lista1.map((item, index) => (
             <ul
@@ -28,7 +28,9 @@ const Footer = () => {
         </ul>
         <div id="redes" className="flex flex-row mt-5">
           {redes.map((item, index) => (
-            <img src={item.icon} className="w-[7%] mr-6" key={index} />
+            <a key={index} href={item.link} target="_blank" rel="noopener noreferrer">
+              <img src={item.icon} className="w-[7%] mr-6" key={index} />
+              </a>
           ))}
         </div>
       </div>
