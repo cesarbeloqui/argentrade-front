@@ -15,8 +15,8 @@ html {
   font-style: normal;
 }
 @font-face {
-  font-family: 'Raleway-ExtraBold';
-  src: local('Raleway');
+  font-family: "Raleway-ExtraBold";
+  src: local("Raleway");
   font-weight: 800;
   font-style: normal;
 }
@@ -63,30 +63,92 @@ body {
   animation-fill-mode: both;
 }
 @keyframes trans-x-right {
-  from {
+  entry 0% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+
+  entry 100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  exit 0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  exit 100% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  /*   from {
     transform: translateX(50px);
-    opacity: 0; /* Opcional para desvanecimiento */
+    opacity: 0;
   }
   to {
     transform: translateX(0px);
-    opacity: 1; /* Opcional para desvanecimiento */
-  }
+    opacity: 1; 
+  } */
 }
 
 .animated-enter-right {
-  animation: trans-x-right 0.5s ease-out;
+  animation: linear trans-x-right;
+  animation-timeline: view();
 }
 @keyframes trans-x-left {
-  from {
-    transform: translateX(-50px);
-    opacity: 0; /* Opcional para desvanecimiento */
+  entry 0% {
+    opacity: 0;
+    transform: translateX(-20%);
   }
-  to {
-    transform: translateX(0px);
-    opacity: 1; /* Opcional para desvanecimiento */
+
+  entry 100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  exit 0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  exit 100% {
+    opacity: 0;
+    transform: translateX(-20%);
   }
 }
 
 .animated-enter-left {
-  animation: trans-x-left 0.5s ease-out;
+  animation: linear trans-x-left;
+  animation-timeline: view();
+}
+@keyframes trans-zoom-in {
+  entry 0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  entry 50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  exit 0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  exit 100% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  /* 
+0% {
+    opacity: 0;
+    transform: scale(.5);
+}
+100% {
+    opacity: 1;
+    transform: scale(1);
+}
+*/
+}
+
+.animated-zoom-in {
+  animation: linear trans-zoom-in;
+  animation-timeline: view();
 }

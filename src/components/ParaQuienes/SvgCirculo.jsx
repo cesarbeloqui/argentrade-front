@@ -1,14 +1,12 @@
 import useLocalizedContent from "../../hooks/useLocalizedContent";
 
-const LogoComponent = ({ className, id, elementsRef }) => {
+const LogoComponent = ({ className }) => {
 	const { paraQuienesSection } = useLocalizedContent();
 	const { circulo } = paraQuienesSection;
   return (
     <div
       dangerouslySetInnerHTML={{ __html: circulo }}
       className={className}
-      ref={(el) => (elementsRef.current[id] = el)}
-      id={id}
     />
   );
 };

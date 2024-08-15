@@ -89,7 +89,7 @@ Contamos con la experiencia, el talento y las herramientas necesarias para el de
       contenido: `Un servicio integral punta a punta, transformándonos en su Departamento Externo de importaciones`,
       palabras: "/palabras.png",
       circulo: `
-<?xml version="1.0" encoding="utf-8"?>
+      <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 707.58 495.75" style="enable-background:new 0 0 707.58 495.75;" xml:space="preserve">
@@ -110,8 +110,8 @@ Contamos con la experiencia, el talento y las herramientas necesarias para el de
 	<text transform="matrix(1 0 0 1 251.2612 472.5469)"><tspan x="0" y="0" class="st1 st2 st3">Controles de calidad </tspan><tspan x="9.58" y="19.2" class="st1 st2 st3">previo-embarque</tspan></text>
 	<rect x="483.41" y="105.61" class="st0" width="167.33" height="36.51"/>
 	<text transform="matrix(1 0 0 1 496.6802 118.999)"><tspan x="0" y="0" class="st1 st2 st3">Búsqueda y selección  </tspan><tspan x="23.92" y="19.2" class="st1 st2 st3">del proveedor</tspan></text>
-	<rect x="534.3" y="229.58" class="st0" width="173.28" height="36.51"/>
-	<text transform="matrix(1 0 0 1 585.459 242.97)"><tspan x="0" y="0" class="st1 st2 st3">Gestión de </tspan><tspan x="-39.01" y="19.2" class="st1 st2 st3">muestras del producto</tspan></text>
+	<rect x="530" y="229.58" class="st0" width="101.99" height="53.72"/>
+	<text transform="matrix(1 0 0 1 545.5184 242.97)"><tspan x="0" y="0" class="st1 st2 st3">Gestión de </tspan><tspan x="-6.64" y="19.2" class="st1 st2 st3">muestras del </tspan><tspan x="4.71" y="38.4" class="st1 st2 st3">producto</tspan></text>
 	<rect x="482.95" y="353.55" class="st0" width="100.4" height="36.51"/>
 	<text transform="matrix(1 0 0 1 488.5637 366.9409)"><tspan x="0" y="0" class="st1 st2 st3">Confirmación</tspan><tspan x="9.06" y="19.2" class="st1 st2 st3">del pedido</tspan></text>
 	<rect y="105.61" class="st0" width="155.01" height="36.51"/>
@@ -251,8 +251,7 @@ Contamos con la experiencia, el talento y las herramientas necesarias para el de
 </g>
 </svg>
 
-
-`,
+      `,
     },
     chinaSection: {
       lead: "APARTADO INTERNACIONAL",
@@ -433,7 +432,7 @@ We have the experience, talent, and tools necessary for the development of new b
       contenido: `A comprehensive end-to-end service, transforming us into your External Import Department.`,
       palabras: "/palabrasIngles.png",
       circulo: `
-     <?xml version="1.0" encoding="utf-8"?>
+      <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 707.58 495.75" style="enable-background:new 0 0 707.58 495.75;" xml:space="preserve">
@@ -452,10 +451,10 @@ We have the experience, talent, and tools necessary for the development of new b
 	<text transform="matrix(1 0 0 1 250.9253 13.3926)"><tspan x="0" y="0" class="st1 st2 st3">Survey of the client&apos;s </tspan><tspan x="47.66" y="19.2" class="st1 st2 st3">needs</tspan></text>
 	<rect x="229.65" y="459.15" class="st0" width="177.76" height="36.51"/>
 	<text transform="matrix(1 0 0 1 249.6694 472.5469)"><tspan x="0" y="0" class="st1 st2 st3">Pre-shipment quality </tspan><tspan x="42.07" y="19.2" class="st1 st2 st3">controls</tspan></text>
-	<rect x="483.41" y="105.61" class="st0" width="167.33" height="36.51"/>
-	<text transform="matrix(1 0 0 1 502.2241 118.999)"><tspan x="0" y="0" class="st1 st2 st3">Supplier search and </tspan><tspan x="35.22" y="19.2" class="st1 st2 st3">selection</tspan></text>
-	<rect x="534.3" y="229.58" class="st0" width="173.28" height="36.51"/>
-	<text transform="matrix(1 0 0 1 569.3069 242.97)"><tspan x="0" y="0" class="st1 st2 st3">Product sample </tspan><tspan x="6.99" y="19.2" class="st1 st2 st3">management</tspan></text>
+	<rect x="470" y="105.61" class="st0" width="131.97" height="36.51"/>
+	<text transform="matrix(1 0 0 1 471.14 118.999)"><tspan x="0" y="0" class="st1 st2 st3">Supplier search and </tspan><tspan x="35.22" y="19.2" class="st1 st2 st3">selection</tspan></text>
+	<rect x="520" y="229.58" class="st0" width="103.21" height="36.51"/>
+	<text transform="matrix(1 0 0 1 545.4783 242.97)"><tspan x="0" y="0" class="st1 st2 st3">Product </tspan><tspan x="2.22" y="19.2" class="st1 st2 st3">sample </tspan></text>
 	<rect x="482.95" y="353.55" class="st0" width="100.4" height="36.51"/>
 	<text transform="matrix(1 0 0 1 514.0752 366.9409)"><tspan x="0" y="0" class="st1 st2 st3">Order </tspan><tspan x="-23.52" y="19.2" class="st1 st2 st3">confirmation</tspan></text>
 	<rect y="105.61" class="st0" width="155.01" height="36.51"/>
@@ -594,7 +593,6 @@ We have the experience, talent, and tools necessary for the development of new b
 		c-0.44,0.19-0.79,0.46-1.06,0.81C191.27,119.02,191.14,119.43,191.14,119.91z"/>
 </g>
 </svg>
-
 
       `,
     },
