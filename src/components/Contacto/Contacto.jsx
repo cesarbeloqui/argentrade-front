@@ -98,7 +98,7 @@ const Contacto = () => {
           <div className="boton">
             <button
               type="submit"
-              className="rounded-md bg-naranja sm:px-3.5 sm:py-2.5 text-sm font-semibold text-white shadow-gray-900 shadow-md hover:bg-azul focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul w-[90vw] sm:w-full h-[8vh] sm:h-auto"
+              className="rounded-md bg-naranja sm:px-3.5 sm:py-2.5 text-sm font-semibold text-white shadow-gray-900 shadow-md hover:bg-azul focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul w-[90vw] sm:w-full h-[6vh] sm:h-auto"
             >
               {boton}
             </button>

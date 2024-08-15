@@ -65,7 +65,7 @@ body {
 @keyframes trans-x-right {
   entry 0% {
     opacity: 0;
-    transform: translateX(20%);
+    transform: translateX(15%);
   }
 
   entry 100% {
@@ -78,7 +78,7 @@ body {
   }
   exit 100% {
     opacity: 0;
-    transform: translateX(-20%);
+    transform: translateX(-15%);
   }
   /*   from {
     transform: translateX(50px);
@@ -97,7 +97,7 @@ body {
 @keyframes trans-x-left {
   entry 0% {
     opacity: 0;
-    transform: translateX(-20%);
+    transform: translateX(-15%);
   }
 
   entry 100% {
@@ -110,7 +110,7 @@ body {
   }
   exit 100% {
     opacity: 0;
-    transform: translateX(-20%);
+    transform: translateX(-15%);
   }
 }
 
@@ -134,7 +134,7 @@ body {
   }
   exit 100% {
     opacity: 0;
-    transform: translateX(-20%);
+    transform: translateX(-15%);
   }
   /* 
 0% {
