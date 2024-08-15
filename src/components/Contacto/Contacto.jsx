@@ -1,7 +1,28 @@
 import { useRef } from "react";
 import useLocalizedContent from "../../hooks/useLocalizedContent";
 import "./index.css";
+import { CheckCircleIcon, XCircleIcon } from "@heroicons/react/24/solid";
 import emailjs from "@emailjs/browser";
+import { useState } from "react";
+const SUCESS = "SUCCESS";
+const FAILED = "FAILED";
+
+// Función simulada de sendForm
+const simulateSendForm = (serviceId, templateId, form, options) => {
+  return new Promise((resolve, reject) => {
+    // Simular un tiempo de respuesta
+    setTimeout(() => {
+      // Simular éxito o error aleatoriamente
+      const isSuccess = true;
+
+      if (isSuccess) {
+        resolve(); // Simular respuesta exitosa
+      } else {
+        reject({ text: "Error simulado" }); // Simular error
+      }
+    }, 3000); // 1 segundo de tiempo de espera
+  });
+};
 
 const Contacto = () => {
   const form = useRef();
@@ -14,8 +35,6 @@ const Contacto = () => {
     telefono,
     empresa,
     mensaje,
-    contenido,
-    subContenido,
     boton,
   } = contactoSection;
   const stylesInputs =
@@ -23,20 +42,56 @@ const Contacto = () => {
   const YOUR_SERVICE_ID = import.meta.env.VITE_YOUR_SERVICE_ID;
   const YOUR_TEMPLATE_ID = import.meta.env.VITE_YOUR_TEMPLATE_ID;
   const YOUR_PUBLIC_KEY = import.meta.env.VITE_YOUR_PUBLIC_KEY;
+  const [enviando, setEnviando] = useState(false);
+  const [enviado, setEnviado] = useState(false);
+  const [noEnviado, setNoEnviado] = useState(false);
+  const [mostrarBoton, setMostrarBoton] = useState(true);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    // Aquí deberías recoger los datos del formulario
+    const form2 = form.current; // Sustituye con los datos del formulario
 
+    setEnviando(true);
+    setEnviado(false);
+    setNoEnviado(false);
+    setMostrarBoton(false); // Oculta el botón al enviar
+
+/*     simulateSendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form, {
+      publicKey: YOUR_PUBLIC_KEY,
+    })
+      .then(() => {
+        setEnviado(true);
+        setEnviando(false);
+        form2.reset();
+        setMostrarBoton(true);
+      })
+      .catch(() => {
+        setNoEnviado(true);
+        setEnviando(false);
+        setTimeout(() => {
+          setNoEnviado(false); // Oculta el mensaje de error después de un tiempo
+          setMostrarBoton(true); // Muestra el botón nuevamente
+        }, 3000); // Tiempo en milisegundos (3000 ms = 3 segundos)
+      }); */
     emailjs
       .sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form.current, {
         publicKey: YOUR_PUBLIC_KEY,
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+        setEnviado(true);
+        setEnviando(false);
+        form2.reset();
+        setMostrarBoton(true);
         },
-        (error) => {
-          console.log("FAILED...", error.text);
+        () => {
+        setNoEnviado(true);
+        setEnviando(false);
+        setTimeout(() => {
+          setNoEnviado(false); // Oculta el mensaje de error después de un tiempo
+          setMostrarBoton(true); // Muestra el botón nuevamente
+        }, 3000); // Tiempo en milisegundos (3000 ms = 3 segundos)
         }
       );
   };
@@ -58,6 +113,7 @@ const Contacto = () => {
           </div>
           <div className="nombre">
             <input
+              required
               name="name"
               id="nombre"
               className={stylesInputs}
@@ -66,6 +122,7 @@ const Contacto = () => {
           </div>
           <div className="email">
             <input
+              required
               className={stylesInputs}
               type="email"
               placeholder={email}
@@ -74,6 +131,7 @@ const Contacto = () => {
           </div>
           <div className="telefono">
             <input
+              required
               className={stylesInputs}
               type="text"
               placeholder={telefono}
@@ -82,6 +140,7 @@ const Contacto = () => {
           </div>
           <div className="empresa">
             <input
+              required
               className={stylesInputs}
               type="text"
               placeholder={empresa}
@@ -90,18 +149,40 @@ const Contacto = () => {
           </div>
           <div className="mensaje sm:h-[15vw]">
             <textarea
+              required
               className="w-[90dvw] sm:w-full h-[30dvh] sm:h-full border-0 shadow-sm ring-2 ring-inset ring-naranja focus:ring-2 focus:ring-inset focus:ring-secondary resize-none"
               placeholder={mensaje}
               name="message"
             />
           </div>
           <div className="boton">
-            <button
+            {/*             <button
               type="submit"
               className="rounded-md bg-naranja sm:px-3.5 sm:py-2.5 text-sm font-semibold text-white shadow-gray-900 shadow-md hover:bg-azul focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul w-[90vw] sm:w-full h-[6vh] sm:h-auto"
-            >
-              {boton}
-            </button>
+            > */}
+            {mostrarBoton && (
+              <button
+                type="submit"
+                disabled={enviado || enviando}
+                className="rounded-md bg-naranja sm:px-3.5 sm:py-2.5 text-sm font-semibold text-white shadow-gray-900 shadow-md hover:bg-azul focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azul w-[90vw] sm:w-full h-[6vh] sm:h-auto"
+              >
+                {boton}
+              </button>
+            )}
+            {enviado && (
+              <p className="flex flex-row justify-center mt-3">
+                Enviado <CheckCircleIcon className="h-5 w-5 text-green-500" />
+              </p>
+            )}
+            {enviando && (
+              <p className="flex flex-row justify-center mt-3">Enviando...</p>
+            )}
+            {noEnviado && !mostrarBoton && (
+              <p className="flex flex-row justify-center mt-3">
+                No enviado. Inténtalo de nuevo.{" "}
+                <XCircleIcon className="h-5 w-5 text-red-500" />
+              </p>
+            )}
           </div>
           <div className="contenido sm:pr-[40%] text-left text-secondary">
             {/*             <span className="font-medium">{contenido}</span>
