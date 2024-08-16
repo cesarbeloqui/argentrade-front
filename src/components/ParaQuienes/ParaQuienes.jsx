@@ -10,7 +10,7 @@ const ParaQuienes = ({reff}) => {
       id="para-quienes"
       ref={reff}
       data-section="¿Para Quienes?"
-      className="flex flex-col relative bg-secondary items-center p-4 sm:p-8"
+      className="scroll-paraquienes flex flex-col relative bg-secondary items-center p-4 sm:p-8"
     >
       <div className="sm:w-[39vw] sm:mb-[1vw]">
         <h2 className="text-center sm:text-[2.5vw] font-bold text-white sm:mb-[1.2vw]">

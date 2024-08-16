@@ -152,3 +152,29 @@ body {
   animation: linear trans-zoom-in;
   animation-timeline: view();
 }
+@media (min-width: 640px) {
+  .scroll-quehacemos {
+    scroll-margin-top: 5rem !important;
+  }
+  .scroll-paraquienes {
+    scroll-margin-top: 3rem !important;
+  }
+  .scroll-servicios {
+    scroll-margin-top: 3rem !important;
+  }
+  .scroll-contacto {
+    scroll-margin-top: 1.5rem !important;
+  }
+}
+  .scroll-quehacemos {
+    scroll-margin-top: 5rem !important;
+  }
+  .scroll-paraquienes {
+    scroll-margin-top: 3.2rem !important;
+  }
+  .scroll-servicios {
+    scroll-margin-top: 3rem !important;
+  }
+  .scroll-contacto {
+    scroll-margin-top: 3rem !important;
+  }

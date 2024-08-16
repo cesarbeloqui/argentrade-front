@@ -49,7 +49,7 @@ const Footer = () => {
             >
               <img
                 src={item.icon}
-                className="sm:w-[2.5vw] w-[9vw]"
+                className="sm:w-[2.3vw] w-[8.5vw]"
                 key={index}
               />
             </a>

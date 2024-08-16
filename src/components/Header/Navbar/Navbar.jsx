@@ -1,5 +1,5 @@
 import { PropTypes } from "prop-types";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import SwitchLanguage from "./SwitchLenguage/SwitchLanguage";
 
@@ -7,6 +7,24 @@ const classNames = (...classes) => classes.filter(Boolean).join(" ");
 
 const Navbar = ({ navigationItems, Logo }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  // Cierra el menú si se hace clic fuera de él
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    // Agregar event listener
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Limpiar event listener en desmontaje
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const renderNavItem = (item) => (
     <a
@@ -35,6 +53,7 @@ const Navbar = ({ navigationItems, Logo }) => {
         "block border-l-4 py-2 pl-3 pr-4 text-base font-medium"
       )}
       aria-current={item.current ? "page" : undefined}
+      onClick={() => setIsOpen(false)} // Cierra el menú al hacer clic
     >
       {item.name}
     </a>
@@ -81,13 +100,14 @@ const Navbar = ({ navigationItems, Logo }) => {
         </div>
       </div>
       <div
+        ref={menuRef} // Asigna el ref al contenedor del menú
         className={`md:hidden ${
           isOpen ? "opacity-100 h-auto" : "opacity-0 h-0"
         } overflow-hidden transition-all duration-300 ease-in-out`}
       >
         <div className="space-y-1 pt-2 pb-3">
           {navigationItems.map(renderMobileNavItem)}
-          <SwitchLanguage />
+          <SwitchLanguage setIsOpen={setIsOpen} isOpen={isOpen} />
         </div>
       </div>
     </nav>

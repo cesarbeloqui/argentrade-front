@@ -101,7 +101,7 @@ const Contacto = ({ reff }) => {
       ref={reff}
       data-section="Contactanos"
       id="contacto"
-      className="bg-white bg-contacto bg-right-bottom bg-no-repeat bg-[length:90%_auto] sm:bg-[length:40%_auto] pb-[10%]"
+      className="scroll-contacto bg-white bg-contacto bg-right-bottom bg-no-repeat bg-[length:90%_auto] sm:bg-[length:40%_auto] pb-[10%]"
     >
       <form ref={form} onSubmit={sendEmail}>
         <div className="container-contacto sm:pl-[10vw] sm:pt-[4vw] ">

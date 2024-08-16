@@ -20,7 +20,7 @@ const languages = [
 ];
 
 // Componente principal de selección de idioma
-export default function LanguageSelector() {
+export default function LanguageSelector({ setIsOpen, isOpen }) {
   const dispatch = useDispatch();
   const currentLanguage = useSelector(selectLanguage);
 
@@ -36,7 +36,10 @@ export default function LanguageSelector() {
           isSelected={currentLanguage === lang.code}
           src={lang.image}
           alt={lang.alt}
-          onClick={() => handleLanguageChange(lang.code)}
+          onClick={() => {
+            handleLanguageChange(lang.code);
+            setIsOpen(!isOpen);
+          }}
         />
       ))}
     </div>
