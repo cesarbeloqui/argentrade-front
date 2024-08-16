@@ -118,6 +118,8 @@ const Contacto = ({ reff }) => {
               required
               name="name"
               id="nombre"
+              maxLength={20}
+              minLength={5}
               className={stylesInputs}
               placeholder={nombre}
             />
@@ -135,7 +137,7 @@ const Contacto = ({ reff }) => {
             <input
               required
               className={stylesInputs}
-              type="text"
+              type="tel"
               placeholder={telefono}
               name="phone"
             />
@@ -144,7 +146,8 @@ const Contacto = ({ reff }) => {
             <input
               required
               className={stylesInputs}
-              type="text"
+              maxLength={20}
+              minLength={5}
               placeholder={empresa}
               name="empresa"
             />
@@ -155,6 +158,8 @@ const Contacto = ({ reff }) => {
               className="w-[90vw] sm:w-full h-[30vh] sm:h-full border-0 shadow-sm ring-2 ring-inset ring-naranja focus:ring-2 focus:ring-inset focus:ring-secondary resize-none"
               placeholder={mensaje}
               name="message"
+              maxLength={500}
+              minLength={50}
             />
           </div>
           <div className="boton">

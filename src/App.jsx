@@ -1,7 +1,5 @@
-import { lazy } from "react";
-
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+
 import ParaQuienes from "./components/ParaQuienes/ParaQuienes";
 import ChinaSection from "./components/ChinaSection/ChinaSection";
 import ServiciosYProdustos from "./components/ServiciosYProductos/ServiciosYProdustos";
@@ -29,12 +27,23 @@ function App() {
     sectionContacto,
   ]);
   useEffect(() => {
+    // Actualiza el título de la página cuando activeSection cambia
     if (activeSection) {
       document.title = `${activeSection} | Argentrade`;
     }
   }, [activeSection]);
+  useEffect(() => {
+    // Realiza el scroll a la sección indicada por el hash en la URL
+    if (window.location.hash) {
+      const sectionId = window.location.hash.replace("#", "");
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
   return (
-    <Router>
+    <>
       <Header reff={sectionHeader} />
       <Whatsapp />
       <QueHacemos reff={sectionQueHacemos} />
@@ -43,7 +52,7 @@ function App() {
       <ServiciosYProdustos reff={sectionServiciosYProductos} />
       <Contacto reff={sectionContacto} />
       <Footer />
-    </Router>
+    </>
   );
 }
 

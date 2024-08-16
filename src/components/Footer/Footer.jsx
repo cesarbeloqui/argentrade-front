@@ -32,7 +32,7 @@ const Footer = () => {
                   className="w-[9vw] sm:w-[2.5vw] mr-4"
                   alt={item.titulo}
                 />
-                <p className="text-white font-semibold sm:text-sm text-[3.4vw]">
+                <p className="text-white font-semibold sm:text-base text-[3.4vw]">
                   {item.titulo}
                 </p>
               </a>
