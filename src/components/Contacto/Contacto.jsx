@@ -138,6 +138,8 @@ const Contacto = ({ reff }) => {
               required
               className={stylesInputs}
               type="tel"
+              maxLength={20}
+              minLength={5}
               placeholder={telefono}
               name="phone"
             />
