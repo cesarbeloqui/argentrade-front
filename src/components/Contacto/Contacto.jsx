@@ -24,7 +24,7 @@ const simulateSendForm = (serviceId, templateId, form, options) => {
   });
 };
 
-const Contacto = () => {
+const Contacto = ({ reff }) => {
   const form = useRef();
   const { contactoSection } = useLocalizedContent();
   const {
@@ -57,7 +57,7 @@ const Contacto = () => {
     setNoEnviado(false);
     setMostrarBoton(false); // Oculta el botón al enviar
 
-/*     simulateSendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form, {
+    /*     simulateSendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form, {
       publicKey: YOUR_PUBLIC_KEY,
     })
       .then(() => {
@@ -80,24 +80,26 @@ const Contacto = () => {
       })
       .then(
         () => {
-        setEnviado(true);
-        setEnviando(false);
-        form2.reset();
-        setMostrarBoton(true);
+          setEnviado(true);
+          setEnviando(false);
+          form2.reset();
+          setMostrarBoton(true);
         },
         () => {
-        setNoEnviado(true);
-        setEnviando(false);
-        setTimeout(() => {
-          setNoEnviado(false); // Oculta el mensaje de error después de un tiempo
-          setMostrarBoton(true); // Muestra el botón nuevamente
-        }, 3000); // Tiempo en milisegundos (3000 ms = 3 segundos)
+          setNoEnviado(true);
+          setEnviando(false);
+          setTimeout(() => {
+            setNoEnviado(false); // Oculta el mensaje de error después de un tiempo
+            setMostrarBoton(true); // Muestra el botón nuevamente
+          }, 3000); // Tiempo en milisegundos (3000 ms = 3 segundos)
         }
       );
   };
 
   return (
     <section
+      ref={reff}
+      data-section="Contactanos"
       id="contacto"
       className="bg-white bg-contacto bg-right-bottom bg-no-repeat bg-[length:90%_auto] sm:bg-[length:40%_auto] pb-[10%]"
     >
@@ -150,7 +152,7 @@ const Contacto = () => {
           <div className="mensaje sm:h-[15vw]">
             <textarea
               required
-              className="w-[90dvw] sm:w-full h-[30dvh] sm:h-full border-0 shadow-sm ring-2 ring-inset ring-naranja focus:ring-2 focus:ring-inset focus:ring-secondary resize-none"
+              className="w-[90vw] sm:w-full h-[30vh] sm:h-full border-0 shadow-sm ring-2 ring-inset ring-naranja focus:ring-2 focus:ring-inset focus:ring-secondary resize-none"
               placeholder={mensaje}
               name="message"
             />

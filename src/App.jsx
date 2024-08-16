@@ -8,20 +8,40 @@ import ServiciosYProdustos from "./components/ServiciosYProductos/ServiciosYProd
 import Contacto from "./components/Contacto/Contacto";
 import Footer from "./components/Footer/Footer";
 import Whatsapp from "./components/Whatsapp/Whatsapp";
+import { useRef } from "react";
+import useIntersectionObserver from "./hooks/useIntersectionObserver";
+import { useEffect } from "react";
 
-const Header = lazy(() => import("./components/Header/Header"));
-const QueHacemos = lazy(() => import("./components/QueHacemos/QueHacemos"));
+import Header from "./components/Header/Header";
+import QueHacemos from "./components/QueHacemos/QueHacemos";
 
 function App() {
+  const sectionHeader = useRef(null);
+  const sectionQueHacemos = useRef(null);
+  const sectionParaQuienes = useRef(null);
+  const sectionServiciosYProductos = useRef(null);
+  const sectionContacto = useRef(null);
+  const activeSection = useIntersectionObserver([
+    sectionHeader,
+    sectionQueHacemos,
+    sectionParaQuienes,
+    sectionServiciosYProductos,
+    sectionContacto,
+  ]);
+  useEffect(() => {
+    if (activeSection) {
+      document.title = `${activeSection} | Argentrade`;
+    }
+  }, [activeSection]);
   return (
     <Router>
-      <Header />
-      <Whatsapp/>
-      <QueHacemos />
-      <ParaQuienes />
+      <Header reff={sectionHeader} />
+      <Whatsapp />
+      <QueHacemos reff={sectionQueHacemos} />
+      <ParaQuienes reff={sectionParaQuienes} />
       <ChinaSection />
-      <ServiciosYProdustos />
-      <Contacto />
+      <ServiciosYProdustos reff={sectionServiciosYProductos} />
+      <Contacto reff={sectionContacto} />
       <Footer />
     </Router>
   );

@@ -3,11 +3,13 @@ import SvgCirculo from "./SvgCirculo";
 import useLocalizedContent from "../../hooks/useLocalizedContent";
 
 
-const ParaQuienes = () => {
+const ParaQuienes = ({reff}) => {
   const { paraQuienesSection } = useLocalizedContent();
   return (
     <section
       id="para-quienes"
+      ref={reff}
+      data-section="¿Para Quienes?"
       className="flex flex-col relative bg-secondary items-center p-4 sm:p-8"
     >
       <div className="sm:w-[39vw] sm:mb-[1vw]">

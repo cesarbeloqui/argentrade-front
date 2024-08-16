@@ -46,16 +46,18 @@ const Navbar = ({ navigationItems, Logo }) => {
         <div className="flex h-16 justify-between">
           <div className="flex w-full justify-between">
             <div className="flex flex-shrink-0 items-center">
-              <img
-                className="block h-10 w-auto lg:hidden"
-                src={Logo}
-                alt="Argentrade"
-              />
-              <img
-                className="hidden h-10 w-auto lg:block"
-                src={Logo}
-                alt="Argentrade"
-              />
+              <a href="/#">
+                <img
+                  className="block h-10 w-auto lg:hidden"
+                  src={Logo}
+                  alt="Argentrade"
+                />
+                <img
+                  className="hidden h-10 w-auto lg:block"
+                  src={Logo}
+                  alt="Argentrade"
+                />
+              </a>
             </div>
             <div className="hidden md:ml-6 md:flex md:space-x-8">
               {navigationItems.map(renderNavItem)}

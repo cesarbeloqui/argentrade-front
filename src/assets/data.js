@@ -315,14 +315,17 @@ Contamos con la experiencia, el talento y las herramientas necesarias para el de
         {
           titulo: "Buenos Aires, Argentina",
           icon: "/icons/icon-ubic.svg",
+          href: "https://maps.app.goo.gl/HHLkVzjULG5RYuxL8",
         },
         {
-          titulo: "+54 9 11 2345 6789",
+          titulo: "+54 9 11 3560 1328",
           icon: "/icons/icon-tel.svg",
+          href: "https://wa.me/5491135601328",
         },
         {
           titulo: "info@argentrade.ar",
           icon: "/icons/icon-email.svg",
+          href: "mailto:info@argentrade.ar",
         },
       ],
       redes: [
@@ -658,14 +661,17 @@ We have the experience, talent, and tools necessary for the development of new b
         {
           titulo: "Buenos Aires, Argentina",
           icon: "/icons/icon-ubic.svg",
+          href: "https://maps.app.goo.gl/HHLkVzjULG5RYuxL8",
         },
         {
           titulo: "+54 9 11 2345 6789",
           icon: "/icons/icon-tel.svg",
+          href: "https://wa.me/5491123456789",
         },
         {
           titulo: "info@argentrade.ar",
           icon: "/icons/icon-email.svg",
+          href: "mailto:info@argentrade.ar",
         },
       ],
       redes: [
